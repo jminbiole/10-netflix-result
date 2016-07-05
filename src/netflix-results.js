@@ -1,7 +1,5 @@
-'use strict';
-
-export default function(element) {
-  const later = fetch('http://netflixroulette.net/api/api.php?title=Clerks')
+export default function (element, movieTitle) {
+  const later = fetch('http://netflixroulette.net/api/api.php?title=Attack%20on%20titan')
 
   // Wait for a response back and turn the string of JSON into an actual JS object
   .then((res) => res.json())
