@@ -10,6 +10,7 @@
 
 <body>
   <div class="outer-container">
+    <div class="middle-container">
     <div class="search-container" width="100%">
       <input class="search" type="search" name="name" value="Movie Title">
       <button class="btn" type="button" name="button">Search</button>
@@ -33,6 +34,7 @@
 
       </div>
     </div>
+   </div>
   </div>
 
 
@@ -43,6 +45,7 @@
   const appCard = document.querySelector('.container');
   var newMovie = require('index');
   var app = require('netflix-results');
+  var test = require('search-bar');
   app(appCard);
   newMovie(appCard);
 

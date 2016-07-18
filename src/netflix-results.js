@@ -1,3 +1,5 @@
+import search from 'search-bar';
+
 export default function (element, movieTitle) {
   const later = fetch('http://netflixroulette.net/api/api.php?title=Attack%20on%20titan')
 

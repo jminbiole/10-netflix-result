@@ -1,6 +1,8 @@
 'use strict';
 
-export default function(element) {
+import search from 'search-bar';
+
+export default function(element, movieTitle) {
   const later = fetch('http://netflixroulette.net/api/api.php?title=Clerks')
 
   // Wait for a response back and turn the string of JSON into an actual JS object
