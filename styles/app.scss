@@ -12,6 +12,9 @@ body {
   padding: 13rem 18rem;
   margin: 0;
 }
+.middle-container {
+  width: 100%;
+}
 
 .search-container {
   width: 100%;
@@ -27,7 +30,7 @@ body {
     outline: none;
   }
 
-  .btn {
+  .search-btn {
     font-family: Arial;
     font-size: 1rem;
     width: 10%;
@@ -41,7 +44,7 @@ body {
 .container {
   background: #e3e3e3;
   padding: 2rem;
-  max-width: 50rem;
+  width: 100%;
 
 }
 

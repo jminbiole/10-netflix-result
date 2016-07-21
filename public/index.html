@@ -11,43 +11,40 @@
 <body>
   <div class="outer-container">
     <div class="middle-container">
-    <div class="search-container" width="100%">
-      <input class="search" type="search" name="name" value="Movie Title">
-      <button class="btn" type="button" name="button">Search</button>
-    </div>
-    <div class="container">
-      <div class="top">
-        <div class="top-text">
-        <h2 class="show-title"></h1>
-        <h4 class="genre"></h3>
-        <p class="star-rating"><strong></strong></p><span><i class="fa fa-star" aria-hidden="true"></i></span>
+      <div class="search-container" width="100%">
+        <input class="search" type="search" name="name" placeholder="Movie Title">
+        <button class="search-btn" type="button" name="button">Search</button>
+      </div>
+      <div class="container">
+        <div class="top">
+          <div class="top-text">
+            <h2 class="show-title"></h2>
+          <h4 class="genre"></h4>
+          <p class="star-rating"><strong></strong></p><span><i class="fa fa-star" aria-hidden="true"></i></span>
+          </div>
+          <img src="" width="100%">
         </div>
-        <img src="" width="100%">
-      </div>
 
-      <div class="bottom">
-        <h3>Summary</h3>
-        <P class="summary"></P>
+        <div class="bottom">
+          <h3>Summary</h3>
+          <P class="summary"></P>
 
-        <h3>Actors</h3>
-        <p class="actors"></p>
+          <h3>Actors</h3>
+          <p class="actors"></p>
 
-      </div>
+        </div>
+        </div>
     </div>
    </div>
-  </div>
 
 
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
-  const appCard = document.querySelector('.container');
-  var newMovie = require('index');
-  var app = require('netflix-results');
-  var test = require('search-bar');
+  const appCard = document.querySelector('.outer-container');
+  var app = require('index');
   app(appCard);
-  newMovie(appCard);
 
   </script>
 </body>

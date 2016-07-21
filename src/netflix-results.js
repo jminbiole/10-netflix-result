@@ -1,7 +1,7 @@
-import search from 'search-bar';
+
 
 export default function (element, movieTitle) {
-  const later = fetch('http://netflixroulette.net/api/api.php?title=Attack%20on%20titan')
+  const later = fetch(`http://netflixroulette.net/api/api.php?title=${movieTitle}`)
 
   // Wait for a response back and turn the string of JSON into an actual JS object
   .then((res) => res.json())
